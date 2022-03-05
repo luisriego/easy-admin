@@ -1,0 +1,3 @@
+<?php //App%255CEntity%255CQuestion%2524isApproved
+
+return [PHP_INT_MAX, []];

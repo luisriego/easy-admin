@@ -1,16 +1,17 @@
-# Symfony Base Repository
+# easy-admin Base Repository
 
-This repository contains the basic configuration to run Symfony applications with MySQL database
+This repository contains the basic configuration to run easy-admin applications with MySQL database
 
 ## Content
 - PHP container running version 8.1.1
 - MySQL container running version 8.0.26
 
-Replace all the occorrencies of the "symfony-" string by the name of the app to develop with the hiffen, ex. "my-app-"
 
 ## Instructions
+- Replace all the occurrences of the "easy-admin-" string by the name of the app to develop with the hyphen, ex. "my-app-"
 - `make build` to build the containers
 - `make start` to start the containers
+- installation example: easy-admin new --dir=project --no-git --version=lts
 - `make stop` to stop the containers
 - `make restart` to restart the containers
 - `make prepare` to install dependencies with composer (once the project has been created)

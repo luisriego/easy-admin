@@ -1,0 +1,46 @@
+{
+    "name": "easy-admin/web-profiler-bundle",
+    "type": "easy-admin-bundle",
+    "description": "Provides a development tool that gives detailed information about the execution of any request",
+    "keywords": [],
+    "homepage": "https://easy-admin.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@easy-admin.com"
+        },
+        {
+            "name": "easy-admin Community",
+            "homepage": "https://easy-admin.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.2",
+        "easy-admin/config": "^5.4|^6.0",
+        "easy-admin/framework-bundle": "^5.4|^6.0",
+        "easy-admin/http-kernel": "^5.4|^6.0",
+        "easy-admin/routing": "^5.4|^6.0",
+        "easy-admin/twig-bundle": "^5.4|^6.0",
+        "twig/twig": "^2.13|^3.0.4"
+    },
+    "require-dev": {
+        "easy-admin/browser-kit": "^5.4|^6.0",
+        "easy-admin/console": "^5.4|^6.0",
+        "easy-admin/css-selector": "^5.4|^6.0",
+        "easy-admin/stopwatch": "^5.4|^6.0"
+    },
+    "conflict": {
+        "easy-admin/form": "<5.4",
+        "easy-admin/mailer": "<5.4",
+        "easy-admin/messenger": "<5.4",
+        "easy-admin/dependency-injection": "<5.4"
+    },
+    "autoload": {
+        "psr-4": { "easy-admin\\Bundle\\WebProfilerBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}

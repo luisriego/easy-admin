@@ -1,0 +1,41 @@
+{
+    "name": "easy-admin/polyfill-mbstring",
+    "type": "library",
+    "description": "easy-admin polyfill for the Mbstring extension",
+    "keywords": ["polyfill", "shim", "compatibility", "portable", "mbstring"],
+    "homepage": "https://easy-admin.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Grekas",
+            "email": "p@tchwork.com"
+        },
+        {
+            "name": "easy-admin Community",
+            "homepage": "https://easy-admin.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "provide": {
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": { "easy-admin\\Polyfill\\Mbstring\\": "" },
+        "files": [ "bootstrap.php" ]
+    },
+    "suggest": {
+        "ext-mbstring": "For best performance"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.23-dev"
+        },
+        "thanks": {
+            "name": "easy-admin/polyfill",
+            "url": "https://github.com/easy-admin/polyfill"
+        }
+    }
+}
